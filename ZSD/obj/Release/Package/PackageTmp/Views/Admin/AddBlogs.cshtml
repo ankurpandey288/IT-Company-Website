@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "AddBlogs";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-wrapper" style="width:85%; margin-top:20px;">
+    <div class="page-content" style="padding-bottom:0px;">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <div class="col-md-8">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" style="text-align:left;">Heading</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="txtHeading">
+                                        <ul class="parsley-errors-list filled" id="SpnHeading" style="display:none">
+                                            <li class="parsley-required">This value is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-8">
+                                <div class="form-group row">
+                                    <label for="txtname" class="col-form-label" style="margin-left:12px;">Request Description</label>
+                                    <div class="col-lg-8">
+                                        <textarea style="min-height: 90px !important;height:92px !important; margin-left:-13px;" class="form-control" id="elm1"></textarea>
+                                        <ul class="parsley-errors-list filled" id="Spndes" style="display:none">
+                                            <li class="parsley-required">This value is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-8">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" style="margin-left:7px;">Choose Image</label>
+                                    <div class="col-lg-8">
+                                        <input type="file" class="form-control" id="txtimage">
+                                        <ul class="parsley-errors-list filled" id="Spnsimage" style="display:none">
+                                            <li class="parsley-required">This value is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-gradient-primary" id="btnSubmit" type="submit">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script src="~/Scripts/View/Common/Common.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/View/Admin/Admin.js"></script>

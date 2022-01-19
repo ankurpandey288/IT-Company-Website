@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Mylearning";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+        opacity: .75;
+    }
+
+    .modal .modal-dialog .close {
+        top: 0;
+        position: absolute;
+        right: 0;
+        height: 36px;
+        width: 36px;
+        background-color: #313a46;
+        opacity: 1;
+        border: 2px solid #fff;
+        text-shadow: none;
+        color: #fff;
+        border-radius: 50%;
+        padding: 0;
+    }
+</style>
+<div class="container" style="margin-top:170px; height:700px;">
+    <div class="row">
+        <div class="form-group row">
+            <button type="button" class="btn btn-outline-danger crypto-modal-btn ml-4" data-toggle="modal" data-target="#exampleModalSend"><i data-feather="navigation" class="fa-upload icon-md mr-2"></i>Upload</button>
+            <div class="modal fade" id="exampleModalSend" tabindex="-1" role="dialog" aria-labelledby="exampleModalDefaultSend" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title m-0" id="exampleModalDefaultSend">Upload Links</h6>
+                            <button type="button" id="closedModel"  class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="la la-times"></i></span>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label" style="margin-top: 15px;margin-left:-30px;">Heading</label>
+                                    <div class="col-lg-8">
+                                        <input class="form-control text-box single-line" data-val="true" data-val-required="The Category field is required." id="txtHeading" style="margin-top: 5px;">
+                                        <ul class="parsley-errors-list filled" id="SpnHeading" style="display:none">
+                                            <li class="parsley-required">This value is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label" style="margin-top: 15px;margin-left:-25px;">Paste link</label>
+                                    <div class="col-lg-8">
+                                        <input class="form-control text-box single-line" data-val="true" data-val-required="The Category field is required." id="txtlink" style="margin-top:5px;">
+                                        <ul class="parsley-errors-list filled" id="Spnslink" style="display:none">
+                                            <li class="parsley-required">This value is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-gradient-primary" id="btnSubmit" type="submit">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="frame_st">
+        <div class="row" id="lerning-vedios">
+
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script src="~/Scripts/View/Common/Common.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/View/Admin/learning.js"></script>

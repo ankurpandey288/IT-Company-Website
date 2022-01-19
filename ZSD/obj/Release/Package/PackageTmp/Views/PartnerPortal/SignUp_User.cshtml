@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "SignUp_User";
+    Layout = "~/Views/Shared/_LayoutAdd.cshtml";
+}
+
+<div class="row mt-5 ml-4 mr-4">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <a href="/"><i class="fas fa-fw fa-arrow-alt-circle-left fa-1x"></i>Home </a>/<a class="ml-2">User Registration</a>
+                <div class="modal-body mt-4">
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Company</label>
+                                    <div class="col-lg-8">
+                                        <select class="form-control" data-val="true" id="ddlCompany" name="CompanyId" aria-invalid="false">
+                                        </select>
+                                        <ul class="parsley-errors-list filled" id="SpnCompany" style="display:none">
+                                            <li class="parsley-required">Company name is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Mobile </label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="txtmobile" required="" placeholder="" autocomplete="off">
+                                        <ul class="parsley-errors-list filled" id="Spnmobile" style="display:none">
+                                            <li class="parsley-required">Mobile number is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Email</label>
+                                    <div class="col-lg-8">
+                                        <input type="email" class="form-control" id="txtemail" aria-describedby="emailHelp" placeholder="">
+                                        <ul class="parsley-errors-list filled" id="Spnemail" style="display:none">
+                                            <li class="parsley-required">Email is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Address *</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="txtadd" aria-describedby="emailHelp" placeholder="">
+                                        <ul class="parsley-errors-list filled" id="Spnadd" style="display:none">
+                                            <li class="parsley-required">Address is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Password</label>
+                                    <div class="col-lg-8">
+                                        <input type="password" class="form-control" id="txtpass" aria-describedby="emailHelp" placeholder="">
+                                        <ul class="parsley-errors-list filled" id="Spnpass" style="display:none">
+                                            <li class="parsley-required">Password is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">City</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="txtcity" aria-describedby="emailHelp" placeholder="">
+                                        <ul class="parsley-errors-list filled" id="Spncity" style="display:none">
+                                            <li class="parsley-required">City is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Country</label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="txtcountry" aria-describedby="emailHelp" placeholder="">
+                                        <ul class="parsley-errors-list filled" id="Spncountry" style="display:none">
+                                            <li class="parsley-required">Country is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Designation</label>
+                                    <div class="col-lg-8">
+                                        <input class="form-control" id="txtdesig" type="text">
+                                        <ul class="parsley-errors-list filled" id="Spndesig" style="display:none">
+                                            <li class="parsley-required">Designation is required.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-gradient-primary" id="btnSubmit" type="submit">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script src="~/Scripts/View/Common/Common.js"></script>
+<link href="~/Content/Custum.css" rel="stylesheet" />
+<script src="~/Scripts/View/Register/signup_user.js"></script>

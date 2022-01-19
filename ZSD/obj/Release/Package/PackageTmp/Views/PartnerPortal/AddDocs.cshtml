@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "AddDocs";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<link href="~/Content/Custum.css" rel="stylesheet" />
+
+<div class="page-wrapper" style="width:90%;">
+    <div class="page-content" style="padding-bottom:0px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 mt-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div novalidate="novalidate">
+                                <input name="__RequestVerificationToken" type="hidden" value="">
+                                <div class="form-horizontal">
+                                    <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-lg-2 col-form-label">Category</label>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control" id="txtCategory">
+                                                    <ul class="parsley-errors-list filled" id="SpnCategory" style="display:none">
+                                                        <li class="parsley-required">This value is required.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group row">
+                                                <label class="col-lg-2 col-form-label">Document Name</label>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control" id="txtfilename">
+                                                    <ul class="parsley-errors-list filled" id="spnfilename" style="display:none">
+                                                        <li class="parsley-required">This value is required.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-1 col-form-label">About</label>
+                                        <div class="col-md-12">
+                                            <textarea style="min-height: 90px !important;height:92px !important;background-color:aliceblue;" class="form-control" id="txtDescript"></textarea>
+                                            <ul class="parsley-errors-list filled" id="SpnDescript" style="display:none">
+                                                <li class="parsley-required">This value is required.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-1 col-form-label">Select File</label>
+                                        <div class="col-md-6">
+                                            <input type="file" name="fileBase" id="txtuplaod">
+                                            <ul class="parsley-errors-list filled" id="Spnuplaod" style="display:none">
+                                                <li class="parsley-required">This value is required.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-gradient-primary" id="btnSubmit" type="submit">Upload</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script src="~/Scripts/View/Common/Common.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/View/Register/Mraketing_Docs.js"></script>

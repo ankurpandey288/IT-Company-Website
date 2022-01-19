@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Activity";
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+}
+<style>
+    .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+        opacity: .75;
+    }
+
+    .modal .modal-dialog .close {
+        top: 0;
+        position: absolute;
+        right: 0;
+        height: 36px;
+        width: 36px;
+        background-color: #313a46;
+        opacity: 1;
+        border: 2px solid #fff;
+        text-shadow: none;
+        color: #fff;
+        border-radius: 50%;
+        padding: 0;
+    }
+</style>
+@Html.Hidden("activity", Session["user_id"])
+<div class="page-wrapper" style="width:96%; margin-top:20px;">
+    <div class="page-content" style="padding-bottom:0px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <button type="button" class="btn btn-gradient-primary px-4 mt-0 mb-3" data-toggle="modal" data-animation="bounce" data-target="#Task"><i class="mdi mdi-plus-circle-outline mr-2"></i>New</button>
+                            <table class="table table-striped table-bordered " id="tblactivity" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Daily Activity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Task" class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mt-0" id="myLargeModalLabel">Daily Activity</h5>
+                <button type="button" id="closedModel" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label text-left">Description</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="txttask"></textarea>
+                                <ul class="parsley-errors-list filled" id="Spntask" style="display:none">
+                                    <li class="parsley-required">This value is required.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-gradient-primary" id="btnSubmit" type="submit">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script src="~/Scripts/moment.js"></script>
+<script src="~/Scripts/View/Common/Common.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/View/Employee/Dailyactivity.js"></script>

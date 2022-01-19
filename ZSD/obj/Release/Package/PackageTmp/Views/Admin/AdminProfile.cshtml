@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "AdminProfile";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@Html.Hidden("admin", Session["user_id"])
+<div class="page-wrapper" style="width:96%; height:240px;">
+    <div class="page-content" style="padding-bottom:0px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mt-4">
+                        <div class="card-body  met-pro-bg">
+                            <div class="met-profile">
+                                <div class="row">
+                                    <div class="col-lg-4 align-self-center mb-3 mb-lg-0">
+                                        <div class="met-profile-main">
+                                            <div class="met-profile_user-detail">
+                                                <h5 class="met-user-name">Welcome</h5>
+                                                <p class="mb-0 met-user-name-post" id="name">Saloni Sahni</p>
+                                                <p class="mb-0 met-user-name-post" id="companyname">Company : ZServiceDesk</p>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-4 ml-auto">
+                                        <div class="met-profile-main">
+                                            <div class="met-profile_user-detail">
+                                                <ul class="list-unstyled personal-detail mt-4">
+                                                    <li class="mt-2"><b> Email </b> : Saloni@zservicedesk.com</li>
+                                                    <li class=""><b> phone </b> : +91 </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left: 15px;">
+                <form action="" id="myform"  enctype="multipart/form-data">
+                <div class="form-group row">
+                    <button type="button" class="btn btn-gradient-primary px-4 mt-0" data-toggle="modal"onclick="location.href='/Admin/AddBlogs'" ><i class="mdi mdi-plus-circle-outline mr-2"></i>New</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-wrapper" style="width:96%;">
+    <div class="page-content" style="padding-bottom:0px;">
+        <div class="container-fluid">
+            <div class="row"id="Blogs">
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script src="~/Scripts/View/Common/Common.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/View/Admin/Admin.js"></script>

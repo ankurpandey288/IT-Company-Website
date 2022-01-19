@@ -1,0 +1,386 @@
+﻿
+@{
+    ViewBag.Title = "Blogs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150382923-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150382923-1');
+    </script>
+</head>
+
+<style>
+    header a.logo img {
+        max-height: 70px;
+    }
+</style>
+
+<section class="wow fadeIn half-section p-0 top-space">
+    <div class="container-fluid padding-30px-lr sm-padding-15px-lr">
+        <div class="swiper-full-screen swiper-container width-100">
+            <div class="swiper-wrapper">
+                <!-- start slider item -->
+                <div class="swiper-slide cover-background" style="background-image:url('/images/Blogs/7.jpg')">
+                    <div class="opacity-extra-medium bg-extra-dark-gray"></div>
+                    <div class="container position-relative one-fourth-screen sm-height-400px">
+                        <div class="slider-typography text-center">
+                            <div class="slider-text-middle-main">
+                                <div class="slider-text-middle">
+                                    <div class="col-12 col-lg-6 col-md-8 mx-auto slide-content">
+                                        @*<div class="padding-50px-all sm-padding-30px-all bg-black-opacity">
+                                                <a href="blog-grid.html" class="text-medium-gray text-extra-small text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block">Branding and Identity</a>
+                                                <h4><a href="blog-post-layout-01.html" class="font-weight-600 text-white-2 alt-font">Everything you can imagine is real</a></h4>
+                                                <a class="btn btn-very-small btn-transparent-white" href="">Technical Datasheet</a>
+                                            </div>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+                <!-- start slider item -->
+                <div class="swiper-slide cover-background" style="background-image:url('/images/Blogs/8.jpg')">
+                    <div class="opacity-extra-medium bg-extra-dark-gray"></div>
+                    <div class="container position-relative one-fourth-screen sm-height-400px">
+                        <div class="slider-typography text-center">
+                            <div class="slider-text-middle-main">
+                                <div class="slider-text-middle">
+                                    <div class="col-12 col-lg-6 col-md-8 mx-auto slide-content">
+                                        @*<div class="padding-50px-all sm-padding-30px-all bg-black-opacity">
+                                                <a href="blog-grid.html" class="text-medium-gray text-extra-small text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block">Branding and Identity</a>
+                                                <h4><a href="blog-post-layout-02.html" class="font-weight-600 text-white-2 alt-font">Young pretty girl posing in the street</a></h4>
+                                                <a class="btn btn-very-small btn-transparent-white" href="blog-post-layout-02.html">Continue Reading</a>
+                                            </div>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white swiper-full-screen-pagination"></div>
+            <div class="swiper-button-next swiper-next-style5"></div>
+            <div class="swiper-button-prev swiper-prev-style5"></div>
+        </div>
+    </div>
+</section>
+
+<section class="wow fadeIn padding-30px-top pb-0">
+    <div class="container-fluid">
+        <div class="row padding-15px-lr sm-no-padding-lr">
+            <!-- start interactive banners item -->
+            <div class="col-12 col-lg-4 banner-style2 md-margin-30px-bottom wow fadeIn">
+                <figure>
+                    <div class="banner-image bg-black height-400px cover-background height-350px" style="background-image:url('/images/Blogs/2.jpg');"></div>
+                    <figcaption class="padding-seven-all bg-black-opacity last-paragraph-no-margin">
+                        <div class="d-flex align-items-center width-100 height-100">
+                            <div class="text-left">
+                                <span class="text-medium-gray alt-font text-uppercase">IT SUPPORT BOT</span>
+                                <span class="text-large font-weight-600 text-white-2 alt-font text-uppercase padding-15px-bottom d-block">KEY REASONS TO HAVE IT SUPPORT BOT</span>
+                                <p>At times, businesses were having less dependency on Technology. Today we....</p>
+                                @*<a href="about-me.html" class="btn btn-transparent-white btn-very-small margin-25px-top">Read More</a>*@
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- end interactive banners item -->
+            <!-- start interactive banners item -->
+            <div class="col-12 col-lg-4 banner-style2 md-margin-30px-bottom wow fadeIn" data-wow-delay="0.2s">
+                <figure>
+                    <div class="banner-image bg-black height-400px cover-background height-350px" style="background-image:url('/images/Blogs/3.jpg');"></div>
+                    <figcaption class="padding-seven-all bg-black-opacity last-paragraph-no-margin">
+                        <div class="d-flex align-items-center width-100 height-100">
+                            <div class="text-left">
+                                <span class="text-medium-gray alt-font text-uppercase">IT SUPPORT BOT</span>
+                                <span class="text-large font-weight-600 text-white-2 alt-font text-uppercase padding-15px-bottom d-block">WHAT IS IT SUPPORT BOT?</span>
+                                <p>IT Support BOT is a new and automated way of delivering...</p>
+                                @*<a href="contact-us-modern.html" class="btn btn-transparent-white btn-very-small margin-25px-top">Read More</a>*@
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- end interactive banners item -->
+            <!-- start interactive banners item -->
+            <div class="col-12 col-lg-4 banner-style2 wow fadeIn" data-wow-delay="0.4s">
+                <figure>
+                    <div class="banner-image bg-black height-400px cover-background height-350px" style="background-image:url('/images/Blogs/4.jpg');"></div>
+                    <figcaption class="padding-seven-all bg-black-opacity last-paragraph-no-margin">
+                        <div class="d-flex align-items-center width-100 height-100">
+                            <div class="text-left">
+                                <span class="text-medium-gray alt-font text-uppercase">IT SUPPORT BOT</span>
+                                <span class="text-large font-weight-600 text-white-2 alt-font text-uppercase padding-15px-bottom d-block">MAKE YOUR SUCCESS STORY WITH IT SUPPORT BOT</span>
+                                <p>BOT is not just about the installation and start using from...</p>
+                                @*<a href="instagram.html" class="btn btn-transparent-white btn-very-small margin-25px-top">Read more </a>*@
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- end interactive banners item -->
+        </div>
+    </div>
+</section>
+
+<section class="wow fadeIn half-section">
+    <div class="container">
+        <div class="row">
+            <main class="col-12 col-lg-9 right-sidebar md-margin-60px-bottom sm-margin-40px-bottom pl-0 md-no-padding-right">
+                <div class="d-flex flex-wrap hover-option4 blog-post-style3">
+                    <!-- start post item -->
+                    <div class="col-12 col-lg-6 banner-style2 wow fadeIn" data-wow-delay="0.4s">
+                        <figure>
+                            <div class="banner-image bg-black height-400px cover-background height-350px" style="background-image:url('/images/Blogs/1.jpg');"></div>
+                            <figcaption class="padding-seven-all bg-black-opacity last-paragraph-no-margin">
+                                <div class="d-flex align-items-center width-100 height-100">
+                                    <div class="text-left">
+                                        <span class="text-medium-gray alt-font text-uppercase">ITSM INTEGRATION</span>
+                                        <span class="text-large font-weight-600 text-white-2 alt-font text-uppercase padding-15px-bottom d-block">WHY ZSERVICEDESK AND SIEM INTEGRATION ?</span>
+                                        <p>While SIEM (Security Incident & Event Management) is the critical component...</p>
+                                        @*<a href="instagram.html" class="btn btn-transparent-white btn-very-small margin-25px-top">Read more  </a>*@
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <!--<div class="grid-item col-12 col-md-6 margin-30px-bottom text-center text-md-left wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-post bg-light-gray inner-match-height">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-02.html">
+                                    <img src="http://placehold.it/900x650" alt="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-02.html" class="alt-font post-title text-medium text-extra-dark-gray width-100 d-block md-width-100 margin-15px-bottom">Being a famous designer is like being a famous dentist.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-block d-lg-inline-block md-margin-10px-top">by <a href="blog-masonry.html" class="text-medium-gray">Herman Miller</a>&nbsp;&nbsp;|&nbsp;&nbsp;29 April 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <!--<div class="grid-item col-12 col-md-6 margin-30px-bottom text-center text-md-left wow fadeInUp">
+                        <div class="blog-post bg-light-gray inner-match-height">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-03.html">
+                                    <img src="http://placehold.it/900x650" alt="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-03.html" class="alt-font post-title text-medium text-extra-dark-gray width-100 d-block md-width-100 margin-15px-bottom">Designers are meant to be loved, not to be understood.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy....</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-block d-lg-inline-block md-margin-10px-top">by <a href="blog-masonry.html" class="text-medium-gray">Hugh Macleod</a>&nbsp;&nbsp;|&nbsp;&nbsp;18 April 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- end post item -->
+                    <!--<div class="grid-item col-12 col-md-6 margin-30px-bottom text-center text-md-left wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-post bg-light-gray inner-match-height">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-04.html">
+                                    <img src="http://placehold.it/900x650" alt="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-04.html" class="alt-font post-title text-medium text-extra-dark-gray width-100 d-block md-width-100 margin-15px-bottom">Design is the conscious effort to impose a meaningful order.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-block d-lg-inline-block md-margin-10px-top">by <a href="blog-masonry.html" class="text-medium-gray">Willie Clark</a>&nbsp;&nbsp;|&nbsp;&nbsp;31 March 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <!--<div class="grid-item col-12 col-md-6 margin-30px-bottom text-center text-md-left wow fadeInUp">
+                        <div class="blog-post bg-light-gray inner-match-height">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-01.html">
+                                    <img src="http://placehold.it/900x650" alt="">
+                                    <div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-01.html" class="alt-font post-title text-medium text-extra-dark-gray width-100 d-block md-width-100 margin-15px-bottom">Good design is a lot like clear thinking made visual.</a>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    <span class="text-medium-gray text-uppercase text-extra-small d-block d-lg-inline-block md-margin-10px-top">by <a href="blog-masonry.html" class="text-medium-gray">John Doe</a>&nbsp;&nbsp;|&nbsp;&nbsp;09 March 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <div class="grid-item col-12 col-md-6 margin-30px-bottom text-center text-md-left wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-post bg-light-gray inner-match-height">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-02.html">
+                                    <img src="~/images/Blogs/5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-02.html" class="alt-font post-title text-medium text-extra-dark-gray width-100 d-block md-width-100 margin-15px-bottom">WHAT IS IT SUPPORT BOT?</a>
+                                <p>IT Support BOT is a new and automated way of delivering the Service Desk functions. Unlike most of other technologies, This new technology of doing things is not just about get the installation done and you are set to get your organization transformed from very next day.</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    @*<span class="text-medium-gray text-uppercase text-extra-small d-block d-lg-inline-block md-margin-10px-top">by <a href="blog-masonry.html" class="text-medium-gray">Isaac Tobin</a>&nbsp;&nbsp;|&nbsp;&nbsp;20 February 2017</span>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <div class="grid-item col-12 col-md-6 text-center text-md-left wow fadeInUp md-margin-30px-bottom">
+                        <div class="blog-post bg-light-gray inner-match-height">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-03.html">
+                                    <img src="~/images/Blogs/6.jpg" alt="">
+                                    @*<div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>*@
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-03.html" class="alt-font post-title text-medium text-extra-dark-gray width-100 d-block md-width-100 margin-15px-bottom">
+                                    MAKE YOUR SUCCESS STORY WITH IT SUPPORT BOT
+                                </a>
+                                <p>BOT is not just about the installation and start using from the very next day. In most of the cases, customers couldn’t make most out of it due to lack of planning & focus. User Adoption is the key for IT Support BOT which can send your whole idea and investment toppling down. </p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    @*<span class="text-medium-gray text-uppercase text-extra-small d-block d-lg-inline-block md-margin-10px-top">by <a href="blog-masonry.html" class="text-medium-gray">Jason Bourne</a>&nbsp;&nbsp;|&nbsp;&nbsp;14 January 2017</span>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end post item -->
+                    <!-- start post item -->
+                    <div class="grid-item col-12 col-md-6 text-center text-md-left wow fadeInUp md-margin-30px-bottom" data-wow-delay="0.2s">
+                        <div class="blog-post bg-light-gray inner-match-height">
+                            <div class="blog-post-images overflow-hidden position-relative">
+                                <a href="blog-post-layout-04.html">
+                                    <img src="~/images/Blogs/7.jpg" alt="">
+                                    @*<div class="blog-hover-icon"><span class="text-extra-large font-weight-300">+</span></div>*@
+                                </a>
+                            </div>
+                            <div class="post-details padding-40px-all md-padding-20px-all">
+                                <a href="blog-post-layout-04.html" class="alt-font post-title text-medium text-extra-dark-gray width-100 d-block md-width-100 margin-15px-bottom">
+                                    WHY ZServiceDesk AND SIEM INTEGRATION?
+                                </a>
+                                <p>While SIEM (Security Incident & Event Management) is the critical component of Information Security domain and provide the necessary monitoring and analysis of incidents, it is also important that every alert or incident is handled appropriately. SIEM & SOAR (Security Orchestration Automation and Response) collectively can help to provide the better response mechanism when it comes to responding to alert or incident from the perspective of what is to be done and how is it to be done as a response in automated or manual way. .</p>
+                                <div class="separator-line-horrizontal-full bg-medium-gray margin-20px-tb"></div>
+                                <div class="author">
+                                    @*<span class="text-medium-gray text-uppercase text-extra-small d-block d-lg-inline-block md-margin-10px-top">by <a href="blog-masonry.html" class="text-medium-gray">Amanda Holmes</a>&nbsp;&nbsp;|&nbsp;&nbsp;01 January 2017</span>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end post item -->
+                </div>
+                <!-- start slider pagination -->
+                <!--<div class="col-12 text-center margin-100px-top md-margin-50px-top wow fadeInUp">
+                    <div class="pagination text-small text-uppercase text-extra-dark-gray">
+                        <ul class="mx-auto">
+                            <li><a href="#"><i class="fas fa-long-arrow-alt-left margin-5px-right d-none d-md-inline-block"></i> Prev</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">Next <i class="fas fa-long-arrow-alt-right margin-5px-left d-none d-md-inline-block"></i></a></li>
+                        </ul>
+                    </div>
+                </div>-->
+                <!-- end slider pagination -->
+            </main>
+            <aside class="col-12 col-lg-3 float-right">
+                <div class="d-inline-block width-100 margin-45px-bottom sm-margin-25px-bottom">
+                    <form>
+                        <div class="position-relative">
+                            <input type="text" class="bg-transparent text-small m-0 border-color-extra-light-gray medium-input float-left" placeholder="Enter your keywords...">
+                            <button type="submit" class="bg-transparent  btn position-absolute right-0 top-1"><i class="fas fa-search ml-0"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="margin-45px-bottom sm-margin-25px-bottom">
+                    <div class="text-extra-dark-gray margin-20px-bottom alt-font text-uppercase text-small font-weight-600 aside-title"><span>About Me</span></div>
+                    <a href="about-me.html"><img src="~/images/Blogs/9.jpg" alt="" class="margin-25px-bottom" /></a>
+                    <p class="margin-20px-bottom text-small">
+                        ZServiceDesk provides industry standard 375+ REST APIs to provide the third-party integration capability. Here are few benefits which can be leveraged by integrating any SIEM with ZServiceDesk.
+                    </p>
+                    @*<a class="btn btn-very-small btn-dark-gray text-uppercase" href="about-me.html">About Author</a>*@
+                </div>
+                @*<div class="margin-50px-bottom">
+                        <div class="text-extra-dark-gray margin-20px-bottom alt-font text-uppercase font-weight-600 text-small aside-title"><span>Follow Us</span></div>
+                        <div class="social-icon-style-1 text-center">
+                            <ul class="extra-small-icon">
+                                <li><a class="facebook" href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="twitter" href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="google" href="http://google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a class="dribbble" href="http://dribbble.com" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                                <li><a class="linkedin" href="http://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>*@
+                @*<div class="margin-45px-bottom sm-margin-25px-bottom">
+                    <div class="text-extra-dark-gray margin-20px-bottom alt-font text-uppercase font-weight-600 text-small aside-title"><span>Categories</span></div>
+                    <ul class="list-style-6 margin-50px-bottom text-small">
+                        <li><a href="blog-masonry.html">Arts and Entertainment</a><span>12</span></li>
+                        <li><a href="blog-masonry.html">Blog</a><span>05</span></li>
+                        <li><a href="blog-masonry.html">Blog Full width</a><span>08</span></li>*@
+                @*<li><a href="blog-masonry.html">Blog Grid</a><span>10</span></li>
+                    <li><a href="blog-masonry.html">Branding</a><span>21</span></li>
+                    <li><a href="blog-masonry.html">Design Tutorials</a><span>09</span></li>
+                    <li><a href="blog-masonry.html">Designing</a><span>07</span></li>
+                    <li><a href="blog-masonry.html">Feature</a><span>06</span></li>
+                    <li><a href="blog-masonry.html">Home Blog</a><span>10</span></li>
+                    <li><a href="blog-masonry.html">Onepage Fashion</a><span>11</span></li>
+                    <li><a href="blog-masonry.html">Sample</a><span>06</span></li>*@
+                <!--</ul>
+                </div>-->
+                <div class="bg-deep-pink padding-30px-all text-white-2 text-center margin-45px-bottom sm-margin-25px-bottom">
+                    <i class="fas fa-quote-left icon-small margin-15px-bottom d-block"></i>
+                    <span class="text-extra-large font-weight-300 margin-20px-bottom d-block">
+                        BOT can help you to make your virtual support desk available round the clock for business users.
+                    </span>
+                </div>
+                <div class="margin-45px-bottom sm-margin-25px-bottom">
+                    <div class="text-extra-dark-gray margin-25px-bottom alt-font text-uppercase font-weight-600 text-small aside-title"><span>Popular post</span></div>
+                    <ul class="latest-post position-relative">
+                        <li class="media">
+                            <div class="media-body text-small"><a href="#" class="text-extra-dark-gray"><span class="d-block margin-5px-bottom">ITSM INTEGRATIONS</span></a> <span class="clearfix text-medium-gray text-small">SIEM INTEGRATION</span></div>
+                        </li>
+                        <li class="media">
+                            <div class="media-body text-small">
+                                <a href="#" class="text-extra-dark-gray"><span class="d-block margin-5px-bottom">IT BOT SUPPORT</span></a> <span class="clearfix text-medium-gray text-small">
+                                    REASONS TO HAVE IT BOT SUPPORT
+
+                                    WHAT IS IT SUPPORT BOT
+
+                                    MAKE YOUR SUCCESS STORY WITH IT SUPPORT BOT
+                                </span>
+                            </div>
+                        </li>
+            </aside>
+        </div>
+    </div>
+</section>

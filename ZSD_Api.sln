@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZSD", "ZSD\ZSD.csproj", "{D6ADE522-CB48-4B81-8E1E-A339F8CF42D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api_zdesk", "Api_zdesk\Api_zdesk.csproj", "{EF506ABD-B720-45C9-9B08-1061D65703A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6ADE522-CB48-4B81-8E1E-A339F8CF42D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6ADE522-CB48-4B81-8E1E-A339F8CF42D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6ADE522-CB48-4B81-8E1E-A339F8CF42D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6ADE522-CB48-4B81-8E1E-A339F8CF42D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF506ABD-B720-45C9-9B08-1061D65703A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF506ABD-B720-45C9-9B08-1061D65703A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF506ABD-B720-45C9-9B08-1061D65703A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF506ABD-B720-45C9-9B08-1061D65703A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88DFC484-566C-479A-95BA-F04963D36DED}
+	EndGlobalSection
+EndGlobal

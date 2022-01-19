@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ZServicesDesk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/Content/theme/assets/images/favicon.ico">
+
+    <!-- Plugins css -->
+    <link href="~/Content/theme/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="~/Content/theme/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <link href="~/Content/theme/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.23/b-1.6.5/b-colvis-1.6.5/b-html5-1.6.5/sp-1.2.2/datatables.min.css" />
+    <!-- App css -->
+    <link href="~/Content/theme/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/assets/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="~/Content/theme/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/theme/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        .topbar .topbar-left .logo .logo-sm {
+            height: 53px;
+        }
+
+        .nav-user img {
+            height: 41px;
+            width: 44px;
+        }
+
+        /*.form-control {
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #bababb;
+            -webkit-transition: border-color 0s ease-out;
+            transition: border-color 0s ease-out;
+            background-color: #fff;
+        }*/
+    </style>
+</head>
+<body data-layout="horizontal">
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="topbar-left text-center text-lg-left">
+                <a href="\" class="logo">
+                    <span >
+                        <img src="~/images/zsd-png-logo.png" alt="logo-small" class="logo-sm">
+                    </span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    @RenderBody()
+    <!-- jQuery  -->
+    <script src="~/Content/theme/assets/js/jquery.min.js"></script>
+    <script src="~/Content/theme/assets/js/jquery-ui.min.js"></script>
+    <script src="~/Content/theme/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/theme/assets/js/metismenu.min.js"></script>
+    <script src="~/Content/theme/assets/js/waves.js"></script>
+    <script src="~/Content/theme/assets/js/feather.min.js"></script>
+    <script src="~/Content/theme/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="~/Content/theme/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="~/Scripts/View/jquerysession.js"></script>
+
+    <!-- Plugins js -->
+    <script src="~/Content/theme/plugins/moment/moment.js"></script>
+    <script src="~/Content/theme/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="~/Content/theme/plugins/select2/select2.min.js"></script>
+    <script src="~/Content/theme/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <script src="~/Content/theme/plugins/timepicker/bootstrap-material-datetimepicker.js"></script>
+    <script src="~/Content/theme/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+    <script src="~/Content/theme/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+
+    <script src="~/Content/theme/assets/pages/jquery.forms-advanced.js"></script>
+
+    @* Datatables *@
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.23/b-1.6.5/b-colvis-1.6.5/b-html5-1.6.5/sp-1.2.2/datatables.min.js"></script>
+    <!-- App js -->
+    <script src="~/Content/theme/assets/js/app.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

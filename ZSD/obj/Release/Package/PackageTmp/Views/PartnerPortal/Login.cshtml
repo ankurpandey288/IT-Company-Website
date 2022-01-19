@@ -1,0 +1,131 @@
+﻿@model Api_zdesk.Models.UserLogin
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutLogged.cshtml";
+}
+<style>
+    .close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+        opacity: .75;
+    }
+
+    .modal .modal-dialog .close {
+        top: 0;
+        position: absolute;
+        right: 0;
+        height: 36px;
+        width: 36px;
+        background-color: #313a46;
+        opacity: 1;
+        border: 2px solid #fff;
+        text-shadow: none;
+        color: #fff;
+        border-radius: 50%;
+        padding: 0;
+    }
+</style>
+<div class="container">
+    <div class="row vh-100">
+        <div class="col-12 align-self-center">
+            <div class="auth-page">
+                <div class="card auth-card shadow-lg" style="margin-top:35px;">
+                    <div class="card-body">
+                        <div class="px-3">
+                            <div class="auth-logo-box">
+                                <a href="@Url.Action("Index", "Home")" class="logo logo-admin"><img src="~/images/logo-sm.png" height="55" alt="logo" class="auth-logo"></a>
+                            </div><!--end auth-logo-box-->
+                            <div class="text-center auth-logo-text">
+                                <h4 class="mt-0 mb-3 mt-5">Partner Login</h4>
+                            </div>
+                            @using (Html.BeginForm("Login", "PartnerPortal", FormMethod.Post))
+                            {
+                                if (ViewBag.Message != null)
+                                {
+
+                                    @*<script type="text/javascript">
+                                        window.onload = function () {
+                                        alert("@ViewBag.Message");
+                                    };
+                                    </script>*@
+                               
+                                <!--end auth-logo-text-->
+                        <div class="alert alert-danger alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+                           @* <p class="text-white">@ViewBag.Message</p>*@
+                            <p class="text-muted mb-0">Invalid Credentials</p>
+                        </div>
+                         }
+                                <div class="form-horizontal auth-form my-4">
+                                    <div class="form-group">
+                                        <label class="col-form-label">Email</label>
+                                        <div class="input-group mb-3">
+                                            <span class="auth-form-icon">
+                                                <i class="dripicons-user"></i>
+                                            </span>
+                                            @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+                                        </div>
+                                        @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                    </div><!--end form-group-->
+
+                                    <div class="form-group">
+                                        <label class="col-form-label">Password</label>
+                                        <div class="input-group mb-3">
+                                            <span class="auth-form-icon">
+                                                <i class="dripicons-lock"></i>
+                                            </span>
+                                            @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control", @type = "password" } })
+                                        </div>
+                                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                                    </div><!--end form-group-->
+
+                                    <div class="form-group row mt-4">
+                                        <div class="col-sm-6">
+                                            <div class="custom-control custom-switch switch-success">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitchSuccess">
+                                                <label class="custom-control-label text-muted" for="customSwitchSuccess">Remember me</label>
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-sm-6 text-right">
+                                            <a href="/Home/Forget_password" class="text-muted font-13"><i class="dripicons-lock"></i> Forgot password?</a>
+                                        </div><!--end col-->
+                                    </div><!--end form-group-->
+
+                                    <div class="form-group mb-0 row">
+                                        <div class="col-12 mt-2">
+                                            <button class="btn btn-gradient-primary btn-round btn-block waves-effect waves-light" id="btnLogin" type="submit">Log In <i class="fas fa-sign-in-alt ml-1"></i></button>
+                                        </div><!--end col-->
+                                    </div> <!--end form-group-->
+                                </div><!--end form-->
+                                <div class="m-3 text-center text-muted">
+                                    <p class="">Don't have an account ? <a href="#" data-toggle="modal" data-animation="bounce" data-target="#peripheralsname" class="text-primary ml-2">Register</a></p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div id="peripheralsname" class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">
+                                        Registration Type
+                                    </h4>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        ×
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        <a class="btn btn-outline-purple btn-round waves-effect waves-light mt-2" href="/PartnerPortal/Company_Register"><i class="dripicons-user-id mr-2"></i>Company Registration</a>
+                                        &nbsp;
+                                        <a class="btn btn-outline-purple btn-round waves-effect waves-light mt-2" href="/PartnerPortal/User_Registration"><i class="dripicons-user-id mr-2"></i>User Registration</a>
+                                    </p>
+                                    <p class="mt-1">Please select registration type</p>
+                                    <p>NOTE : Your company must be registered before ypu proceed with User Registration to check your company registration please contact your administrator or send Email to Partner@zservicedesk.com </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "ViewProfile";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-wrapper" style="width:100%; margin-top:20px;">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row" id="blogs">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="blog-card">
+                                <img src="" id="image" alt="" class="img-fluid" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h1 id="heading"></h1><br>
+                    <p id="describe"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script src="~/Scripts/View/Common/Common.js"></script>
+<script src="~/Scripts/View/Admin/viewprofile.js"></script>

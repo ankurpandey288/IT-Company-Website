@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150382923-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150382923-1');
+    </script>
+</head>
+
+<script>
+    var temp = '@ViewBag.msg';
+    if (temp != null & temp != '') {
+        alert(temp);
+    }
+</script>
+
+<style>
+    border-color-white {
+        border-color: #c2bbbb !important;
+    }
+
+    header a.logo img {
+        max-height: 70px;
+    }
+
+    .big-input, .big-textarea, .big-select select {
+        padding: 18px 25px;
+        font-size: 14px;
+        border-radius: 0;
+        border-color: black !important;
+</style>
+
+<section class="wow fadeIn bg-light-gray padding-35px-tb page-title-small top-space">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-6 text-md-left text-center">
+                <!-- start page title -->
+                <h1 class="alt-font text-extra-dark-gray font-weight-600 mb-0 text-uppercase">Contact us</h1>
+                <!-- end page title -->
+            </div>
+            <div class="col-lg-4 col-md-6 breadcrumb text-small alt-font justify-content-center justify-content-md-end sm-margin-15px-top">
+                <!-- breadcrumb -->
+                <ul>
+                    <li><a href="#" class="text-dark-gray">Pages</a></li>
+                    <li><a href="/" class="text-dark-gray">Home</a></li>
+                </ul>
+                <!-- end breadcrumb -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wow fadeIn big-section" style="height:200px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center" style="margin-top:-16px;">
+                @*<span class="alt-font text-small text-uppercase">We would love to work with you</span>*@
+                <h2 class="alt-font font-weight-700 letter-spacing-minus-1 text-extra-dark-gray">How we can help</h2>
+                <p class="width-85 mx-auto sm-width-100">We would be pleased to hear from you. Just write to us and our experts will get in touch with you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="no-padding bg-extra-dark-gray">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-6 p-0 cover-background md-height-450px sm-height-350px wow fadeInLeft" style="background: url('/images/contact-1.jpg')"></div>
+            <div class="col-12 col-lg-6 p-0 wow fadeInRight">
+                <div class="row m-0">
+                    <!-- start contact item -->
+                    <div class="col-12 col-md-6 bg-extra-dark-gray d-flex flex-column justify-content-center align-items-center text-center height-350px last-paragraph-no-margin">
+                        <i class="icon-map text-deep-pink icon-medium margin-25px-bottom"></i>
+                        <div class="text-white-2 text-uppercase alt-font font-weight-600 margin-5px-bottom">Corporate HQ</div>
+                        <p class="width-60 lg-width-80 mx-auto text-medium">H28, ARV Park, Sector 63, Noida (201301)</p>
+                    </div>
+                    <!-- end contact item -->
+                    <!-- start contact item -->
+                    <div class="col-12 col-md-6 bg-black d-flex flex-column justify-content-center align-items-center text-center height-350px last-paragraph-no-margin">
+                        <i class="icon-chat text-deep-pink icon-medium margin-25px-bottom"></i>
+                        <div class="text-white-2 text-uppercase alt-font font-weight-600 margin-5px-bottom">Let's Talk</div>
+                        <p class="mx-auto text-medium mb-0">Phone:1800-120-2214</p>
+                        <p class="mx-auto text-medium"></p>
+                    </div>
+                    <!-- end contact item -->
+                    <!-- start contact item -->
+                    <div class="col-12 col-md-6 bg-black d-flex flex-column justify-content-center align-items-center text-center height-350px last-paragraph-no-margin">
+                        <i class="icon-envelope text-deep-pink icon-medium margin-25px-bottom"></i>
+                        <div class="text-white-2 text-uppercase alt-font font-weight-600 margin-5px-bottom">Email Us</div>
+                        General Enquiry: <a href="mailto:hello@zservicedesk.com">hello@zservicedesk.com</a>
+                        Sales Enquiry : <a href="mailto:sales@zservicedesk.com">sales@zservicedesk.com</a>
+                        Technical Support : <a href="mailto:support@zservicedesk.com">support@zservicedesk.com</a>
+                    </div>
+                    <!-- end contact item -->
+                    <!-- start contact item -->
+                    <div class="col-12 col-md-6 bg-extra-dark-gray d-flex flex-column justify-content-center align-items-center text-center height-350px last-paragraph-no-margin">
+                        <i class="fa fa-users text-deep-pink icon-medium margin-25px-bottom" style="margin-top:-15px;"></i>
+                        <div class="text-white-2 text-uppercase alt-font font-weight-600 margin-5px-bottom">Work With Us</div>
+                        <p>Coming together is a beginning, <br>staying together is progress,<br> and working together is success.</p>
+                        <a href="mailto:Career@domain.com" style="padding-top:20px;">Career@zservicedesk.com</a>
+                        <a href="mailto: partner@zservicedesk.com"> partner@zservicedesk.com</a>
+                    </div>
+                    <!-- end contact item -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wow fadeIn" id="start-your-project">
+    <div class="container">
+        <div class="row justify-content-center" style="height:120px;">
+            <div class="col-12 col-lg-6 col-md-8 margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom text-center last-paragraph-no-margin">
+                <h5 class="alt-font font-weight-700 text-extra-dark-gray text-uppercase" style="font-size: 23px;">
+                    WE WOULD BE HAPPY TO HEAR FROM YOU<br>
+                    CONTACT OUR EXPERTS
+                </h5>
+            </div>
+        </div>
+        <form id="project-contact-form" action="Contact" method="post">
+            <div class="row">
+                <div class="col-12">
+                    <div id="success-project-contact-form" class="mx-0"></div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <input type="text" name="name" required id="name" placeholder="Name*" class="big-input">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <input type="text" name="Companyname" required id="phone" placeholder="Company name*" class="big-input">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <input type="text" name="Email" required id="phone" placeholder="Email*" class="big-input">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <input type="text" name="phone" required id="phone" placeholder="Phone*" class="big-input">
+                </div>
+                <div class="col-12">
+                    <textarea name="comment" required id="comment" placeholder="Your Meassage *" rows="6" class="big-textarea"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button id="project-contact-us-button submit" type="submit" class="btn btn-transparent-dark-gray btn-large margin-20px-top">send message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

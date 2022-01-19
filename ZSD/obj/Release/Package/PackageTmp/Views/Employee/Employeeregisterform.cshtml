@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Employeeregisterform";
+    Layout = "~/Views/Shared/_LayoutRegistration.cshtml";
+}
+
+<style>
+    .big-section {
+        background: radial-gradient(circle at 39% 47%, rgba(107,107,107,0.08) 0%, rgba(107,107,107,0.08) 33.333%, rgba(72,72,72,0.08) 33.333%, rgba(72,72,72,0.08) 66.666%, rgba(36,36,36,0.08) 66.666%, rgba(36,36,36,0.08) 99.999%), radial-gradient(circle at 53% 74%, rgba(182,182,182,0.08) 0%, rgba(182,182,182,0.08) 33.333%, rgba(202,202,202,0.08) 33.333%, rgba(202,202,202,0.08) 66.666%, rgba(221,221,221,0.08) 66.666%, rgba(221,221,221,0.08) 99.999%),radial-gradient(circle at 14% 98%, rgba(184,184,184,0.08) 0%, rgba(184,184,184,0.08) 33.333%, rgba(96,96,96,0.08) 33.333%, rgba(96,96,96,0.08) 66.666%, rgba(7,7,7,0.08) 66.666%, rgba(7,7,7,0.08) 99.999%), linear-gradient( 45deg, #f79f9b, #0f4069);
+    }
+</style>
+<section class="wow fadeIn bg-light-gray padding-35px-tb page-title-small top-space">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-6 text-md-left text-center">
+                <!-- start page title -->
+                <h1 class="alt-font text-extra-dark-gray font-weight-600 mb-0 text-uppercase">Employee Registration Form</h1>
+                <!-- end page title -->
+            </div>
+            <div class="col-lg-4 col-md-6 breadcrumb text-small alt-font justify-content-center justify-content-md-end sm-margin-15px-top">
+                <!-- breadcrumb -->
+                <ul>
+                    <li><a href="#" class="text-dark-gray">Pages</a></li>
+                    <li><a href="/" class="text-dark-gray">Home</a></li>
+                </ul>
+                <!-- end breadcrumb -->
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wow fadeIn big-section" id="section-down" style="visibility: visible; animation-name: fadeIn; height:100%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-12 col-lg-8 md-margin-30px-bottom wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="padding-fifteen-all bg-light-gray border-radius-6 lg-padding-seven-all sm-padding-30px-all h-100">
+                    <span class="text-extra-dark-gray alt-font text-large font-weight-600 margin-25px-bottom d-block" style="margin-top:-60px;"></span>
+                    <form id="contact-form" method="post">
+                        <div>
+                            <div id="success-contact-form" class="mx-0" style="display: none;"></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" required id="name" placeholder="Name*" class="border-radius-4 bg-white medium-input">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="number" required id="number" placeholder="Contact number*" class="border-radius-4 bg-white medium-input">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="email" name="email" required id="email" placeholder="E-mail*" class="border-radius-4 bg-white medium-input">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="Designation" required id="Designation" placeholder="Designation*" class="border-radius-4 bg-white medium-input">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="password" name="password" required id="password" placeholder="Password*" class="border-radius-4 bg-white medium-input">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="password" name="Confirm-Password" required id="ConfirmPassword" placeholder="Confirm-Password*" class="border-radius-4 bg-white medium-input">
+                                </div>
+                            </div>
+                            <button class="btn btn-small border-radius-4 btn-dark-gray" id="btnSubmit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/Scripts/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/jquery-3.6.0.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/View/Common/Common.js"></script>
+<script src="~/Scripts/View/Employee/registration.js"></script>   

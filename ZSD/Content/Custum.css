@@ -1,0 +1,15 @@
+﻿.col-form-label {
+    text-align: left;
+}
+
+.modal-lg, .modal-xl {
+    max-width: 1200px;
+}
+
+.modal-content {
+    width: 105% !important;
+}
+
+col-sm-2{
+    text-align:left!important;
+}
